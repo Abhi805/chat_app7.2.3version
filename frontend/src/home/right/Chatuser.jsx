@@ -13,7 +13,7 @@ export default function Chatuser() {
           </div>
         </div>
         <div>
-          <h1 className="text-xl" >{selectedConversation}</h1>
+          <h1 className="text-xl" >{selectedConversation.name}</h1>
           <span className="text-sm" >Online</span>
         </div>
       </div>

@@ -20,7 +20,7 @@ export const sendMessage = async (req, res) => {
             participants: { $all: [senderId, receiverId] },
         });
 
-        // If no conversation found, create a new one
+        // If no conversation found, create a new  one
         if (!conversation) {
             conversation = await Conversation.create({
                 participants: [senderId, receiverId],
@@ -40,7 +40,7 @@ export const sendMessage = async (req, res) => {
 
         // Send response
         res.status(201).json({
-            message: "Message sent successfully",
+            message: "Message sent successfully gg",
             newMessage,
         });
     } catch (error) {
